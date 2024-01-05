@@ -10,7 +10,7 @@ export class MoviesController {
 
     @Get('/:id')
     getOne(@Param('id') movieId: string) {
-        return 'This will return one movie with the id:  + ${movieId}';
+        return 'This will return one movie with the id: ' + movieId;
     }
 
     @Post()
@@ -20,11 +20,11 @@ export class MoviesController {
 
     @Delete('/:id')
     remove(@Param('id') movieId: string) {
-        return 'This will delete a movie with the id:  + ${movieId}';
+        return 'This will delete a movie with the id: ' + movieId;
     }
 
     @Put('/:id')
     patch(@Param('id') movieId: string) {
-        return 'This will patch a movie with the id:  + ${movieId}';
+        return 'This will patch a movie with the id: ' + movieId;
     }
 }
